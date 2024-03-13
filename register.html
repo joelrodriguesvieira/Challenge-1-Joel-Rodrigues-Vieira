@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/register.css">
+
+    <title>Register - Compass.uol</title>
+</head>
+<body>
+    <main>
+        <section class="container-left">
+            <div class="content-center">
+                <div class="text-head">
+                    <h2>Welcome,</h2>
+                    <p>Please, register to continue.</p>
+                </div>
+                <div class="form-container">
+                    <form action="#">
+                        <div class="box-first-name">
+                            <label for="first-name">first name</label>
+                            <input type="text" id="first-name" name="first-name" required placeholder="Your fist name">
+                        </div>
+                        <div class="box-last-name">
+                            <label for="last-name">last name</label>
+                            <input type="text" id="last-name" name="last-name" required placeholder="Your last name">
+                        </div>
+                        <div class="box-birth-date">
+                            <label for="birth-date">birth date</label>
+                            <!-- IMPORTANT! create a regex for the format data -->
+                            <input type="text" name="birth-date" id="birth-date" required placeholder="MM/DD/YYYY">
+                        </div>
+                        <div class="box-country">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" name="country" required placeholder="Your Country">
+                        </div>
+                        <div class="box-city">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" required placeholder="Your City">
+                        </div>
+                        <div class="box-email">
+                            <label for="e-mail">e-mail</label>
+                            <input type="text" id="e-mail" name="e-mail" required placeholder="A valid e-mail here">
+                        </div>
+                        <div class="box-password">
+                            <label for="password">password</label>
+                            <input type="password" id="password" name="password" required placeholder="Your password">
+                        </div>
+                        <div class="box-check-password">
+                            <label for="check-password">password</label>
+                            <input type="password" id="check-password" name="check-password" required placeholder="Confirm your password">
+                        </div>
+                    </form>
+                </div>
+                <div class="final-btns">
+                    <button id="btn-register">Register Now</button>
+                    <p class="text-question">Already have an account? <a href="login.html">Log in here</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="container-right">
+            <div class="background">
+                <img src="src/imgs/background-computer.png" alt="">
+            </div>
+            <div class="content">
+                <a href="https://compass.uol/pt/home/" target="_blank">
+                    <img src="src/imgs/logo_compass-uol.png" alt="logo compass uol">
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
