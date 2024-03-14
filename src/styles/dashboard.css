@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "MarkPro-Regular";
+    src: url(../fonts/MARKPRO.OTF);
+}
+
+@font-face {
+    font-family: "MarkPro-Bold";
+    src: url(../fonts/MARKPROBOLD.OTF);
+}
+
+* {
+    font-family: "MarkPro-Regular";
+}
+
+body {  
+    background-color: #FFFFFF;
+}
+
+header {
+    width: 100%;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    height: 169px;
+}
+
+.logo-head img {
+    width: 150px;
+    height: 42.75px;
+}
+
+.hours-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+#current-hours {
+    font-family: "MarkPro-Bold";
+    font-size: 144px;
+    font-weight: bold;
+    width: 327px;
+    height: 146px;
+}
+
+#current-day {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#temperature {
+    font-family: "MarkPro-Bold";
+    font-size: 48px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 169px - 100px);
+    align-items: center;
+    position: relative;
+}
+
+.container-logo a {
+    position: absolute;
+    bottom: -80px;
+    z-index: -1;
+}
+
+.container-content {
+    color: var(--red);
+    margin-left: auto;
+    text-align: right;
+    padding: 134px;
+}
+
+.container-content span {
+    font-family: "MarkPro-Bold";
+    font-weight: bold;
+    line-height: 1;
+}
+
+.container-content p {
+    font-size: 24px;
+    color: #222;
+    font-family: "MarkPro-Regular";
+    margin-bottom: 5px;
+}
+
+.first-message span {
+    font-size: 36px;
+}
+
+.second-message span,
+.third-message span,
+.fourth-message span {
+    font-size: 64px;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(90deg, #212221, #1C1D20);
+}
