@@ -12,7 +12,7 @@
     font-family: "MarkPro-Regular";
 }
 
-body {  
+body {
     background-color: #FFFFFF;
 }
 
@@ -108,4 +108,88 @@ footer {
     height: 100px;
     width: 100%;
     background: linear-gradient(90deg, #212221, #1C1D20);
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.notice-left {
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    padding: 33px 29px;
+    border-right: 1px solid #FFFFFF;
+}
+
+.notice-left p {
+    text-align: right;
+    width: 541px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.notice-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding-left: 123px;
+    font-size: 14px;
+}
+
+.count-time {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.message-time {
+    text-align: right;
+    width: 109px;
+    height: 49px;
+}
+
+.seconds-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-evenly;
+    padding: 12px 0;
+}
+
+#current-seconds {
+    font-family: "MarkPro-Bold";
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 0.3;
+}
+
+.btns-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.btns-navigation button{
+    height: 100px;
+    width: 131px;
+    font-family: "MarkPro-Bold";
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+}
+
+#continue-navigation {
+    padding: 0 18px;
+    font-family: "MarkPro-Regular";
+    background: #FFFFFF;
+    color: #C13216;
+    border: none;
+}
+
+#logout {
+    background: transparent;
+    color: #FFFFFF;
 }
