@@ -69,6 +69,7 @@ main {
 .underline-text {
     text-decoration: underline;
 }
+
 .input-box {
     display: flex;
     align-items: center;
