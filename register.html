@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/register.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
     <title>Register - Compass.uol</title>
 </head>
@@ -18,7 +19,7 @@
                     <p>Please, register to continue.</p>
                 </div>
                 <div class="form-container">
-                    <form action="#">
+                    <form id="unique-form" action="#">
                         <div class="box-first-name">
                             <label for="first-name">first name</label>
                             <input type="text" id="first-name" name="first-name" required placeholder="Your fist name">
@@ -29,7 +30,6 @@
                         </div>
                         <div class="box-birth-date">
                             <label for="birth-date">birth date</label>
-                            <!-- IMPORTANT! create a regex for the format data -->
                             <input type="text" name="birth-date" id="birth-date" required placeholder="MM/DD/YYYY">
                         </div>
                         <div class="box-country">
@@ -55,7 +55,7 @@
                     </form>
                 </div>
                 <div class="final-btns">
-                    <button id="btn-register">Register Now</button>
+                    <button type="submit" id="btn-register">Register Now</button>
                     <p class="text-question">Already have an account? <a href="login.html">Log in here</a></p>
                 </div>
             </div>
@@ -71,5 +71,7 @@
             </div>
         </section>
     </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="src/scripts/register.js"></script>
 </body>
 </html>
