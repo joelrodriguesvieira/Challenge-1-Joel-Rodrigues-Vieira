@@ -67,7 +67,7 @@ function validateForm(firstName, lastName,date,country,city,email,password,check
 }
 
 function isValidInput(word) {
-    let check = /^[A-Z][a-z]*\s?^[A-Z][a-z]*$/;
+    let check = /^[A-Z][a-z]*/;
     return check.test(word);
 };
 
