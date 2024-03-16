@@ -40,6 +40,8 @@ header {
     flex-direction: column;
     align-items: center;
     font-size: 14px;
+    width: 121px;
+    height: 78px;
 }
 
 #current-hours {
@@ -58,6 +60,12 @@ header {
 #temperature {
     font-family: "MarkPro-Bold";
     font-size: 48px;
+}
+
+#climate {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .container {
