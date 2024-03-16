@@ -68,7 +68,7 @@ header {
     gap: 12px;
 }
 
-.container {
+#container {
     display: flex;
     width: 100%;
     height: calc(100vh - 169px - 100px);

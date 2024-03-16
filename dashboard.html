@@ -6,11 +6,13 @@
 
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
 
     <title>Welcome to Dashboard</title>
 </head>
 <body>
-    <header>
+    <header id="head-container">
         <div class="logo-head">
             <a href="https://compass.uol/pt/home/" target="_blank">
                 <img src="src/imgs/logo_compass-uol2.png" alt="logo compass uol">
@@ -18,7 +20,7 @@
         </div>
         <div class="hours-head">
             <span id="current-hours"></span>
-            <p id="current-day">terça-feira, 17 de março de 2020</p>
+            <p id="current-date"></p>
         </div>
         <div class="location-head">
             <p id="city"></p>
@@ -29,7 +31,7 @@
         </div>
     </header>
 
-    <section class="container">
+    <section id="container">
         <div class="container-logo">
             <a href="https://compass.uol/pt/home/">
                 <img src="src/imgs/logo-uol.svg" alt="logo uol">
@@ -54,7 +56,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="footer-container">
         <div class="notice-left">
             <p>Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar</p>
         </div>
@@ -75,5 +77,7 @@
         </div>
     </footer>
     <script src="src/scripts/dashboard.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 </body>
 </html>
