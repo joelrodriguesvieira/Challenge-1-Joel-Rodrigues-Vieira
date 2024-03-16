@@ -46,6 +46,7 @@ function handleInputs(userEmail,userPassword) {
     for (let i = 0; i < listUsers.length; i++) {
         if((listUsers[i].email === userEmail.value) && (listUsers[i].password === userPassword.value)) {
             window.location.href = 'dashboard.html';
+            localStorage.setItem('currentUser', JSON.stringify(listUsers[i]));
             findUser = true;
         }
     }
