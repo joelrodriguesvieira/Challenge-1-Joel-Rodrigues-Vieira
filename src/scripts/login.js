@@ -42,23 +42,24 @@ function checkInputs() {
 function handleInputs(userEmail,userPassword) {
     let listUsers = JSON.parse(localStorage.getItem('users'));
     let findUser = false;
-
+    
     for (let i = 0; i < listUsers.length; i++) {
         if((listUsers[i].email === userEmail.value) && (listUsers[i].password === userPassword.value)) {
             window.location.href = 'dashboard.html';
             findUser = true;
         }
     }
-
+    
     if (!findUser) {
+        const p = document.createElement('p');
         const formLogin = document.getElementById('form-login');
-        console.log(userEmail)
-        console.log(userPassword)
         userEmail.style.border = '1px solid #E9B425';
         userPassword.style.border = '1px solid #E9B425';
-        const p = document.createElement('p');
         p.classList.add('message-form')
-        p.textContent = `Wow, invalid username or password.\nPlease, try again!`;
+        p.textContent = `Wow, invalid username or password. Please, try again!`;
         formLogin.appendChild(p);
+        setTimeout(() => {
+            formLogin.removeChild(p);
+        }, 2500);
     }
 };
