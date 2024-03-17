@@ -4,9 +4,9 @@ function main() {
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
     if (currentUser === null) {
-        document.getElementById('head-container').style.display = 'none';
-        document.getElementById('container').style.display = 'none';
-        document.getElementById('footer-container').style.display = 'none';
+        hidenDisplay('head-container');
+        hidenDisplay('container');
+        hidenDisplay('footer-container');
         Toastify({
             text: "SORRY! YOU NEED TO BE LOG IN.\nCLICK HERE TO LOG IN!",
             duration: 60000,
@@ -103,4 +103,8 @@ function getCurrentDate() {
 
     const formattedDate = `${today}, ${currentDay} de ${currentMonth} de ${currentYear}`;
     currentDate.textContent = formattedDate;
+};
+
+function hidenDisplay(idTag) {
+    document.getElementById(idTag).style.display = 'none';
 };
