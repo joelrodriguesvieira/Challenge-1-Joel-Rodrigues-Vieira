@@ -72,6 +72,7 @@ function getCurrentHours() {
     let currentHours = date.getHours();
     let currentMinutes = date.getMinutes();
 
+    currentHours = currentHours < 10 ? '0' + currentHours : currentHours;
     currentMinutes = currentMinutes < 10 ? '0' + currentMinutes : currentMinutes;
     tagCurrentHours.textContent = `${currentHours}:${currentMinutes}`;       
 };

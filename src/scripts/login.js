@@ -20,8 +20,7 @@ function addTextDecoration(event) {
 function checkInputs() {
     const inputUserEmail = document.getElementById('user-email');
     const inputUserPassword = document.getElementById('password');
-    let listUsers = JSON.parse(localStorage.getItem('users'));
-
+    
     if (inputUserEmail.value === "" || inputUserPassword.value === "") {
         Toastify({
             text: "Please, fill in all fields",
@@ -33,7 +32,7 @@ function checkInputs() {
             gravity: "bottom",
             position: "left"
         }).showToast();
-    } else if (listUsers !== null) {
+    } else {
         handleInputs(inputUserEmail,inputUserPassword);
     }
 
@@ -43,11 +42,13 @@ function handleInputs(userEmail,userPassword) {
     let listUsers = JSON.parse(localStorage.getItem('users'));
     let findUser = false;
     
-    for (let i = 0; i < listUsers.length; i++) {
-        if((listUsers[i].email === userEmail.value) && (listUsers[i].password === userPassword.value)) {
-            window.location.href = 'dashboard.html';
-            localStorage.setItem('currentUser', JSON.stringify(listUsers[i]));
-            findUser = true;
+    if (listUsers !== null) {
+        for (let i = 0; i < listUsers.length; i++) {
+            if((listUsers[i].email === userEmail.value) && (listUsers[i].password === userPassword.value)) {
+                window.location.href = 'dashboard.html';
+                localStorage.setItem('currentUser', JSON.stringify(listUsers[i]));
+                findUser = true;
+            }
         }
     }
     
